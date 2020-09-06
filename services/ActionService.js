@@ -7,7 +7,6 @@ class ActionService {
 
   initialize() {
     let path = this.config.dir.app + this.config.dir.actions;
-    console.log("action path is .. ", path);
     this.actions = require(path);
   }
 

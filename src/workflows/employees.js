@@ -3,28 +3,23 @@ module.exports = {
   header: "Employees",
   // default: true,
   access: ["admin"],
-  top_action: [
-    { identifier: "employees-add", label: "Add Employees" }
-  ],
-  inline_action: [
-    { identifier: "employees-delete", label: "Delete"  }
-  ],
+  top_action: [{ identifier: "employees-add", label: "Add Employees" }],
+  inline_action: [{ identifier: "employees-delete", label: "Delete" }],
   db_config: {
-    coll: "employees"
+    coll: "employees",
   },
-  filter: { status: "requested" },
+  filter: {},
   display: [
-    { key: "pic", label: "Photo" },
+    { key: "pic", label: "Photo", type: "image" },
     { key: "name", label: "Name" },
     { key: "email", label: "Email" },
     { key: "position", label: "Designation" },
     { key: "phone", label: "Phone" },
-
   ],
   formatter: async (items, fr, user) => {
-    console.log("items is ... ", items); 
+    console.log("items is ... ", items);
     return items;
-  }
+  },
 };
 
 async function getBookInfo(bookId, fr) {

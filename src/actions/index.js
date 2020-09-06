@@ -1,7 +1,6 @@
 module.exports = {
-    "companies-add": require("./companies-add"),
-    "employees-add" : require("./employees-add")
-	// "book-edit": require("./book-edit"),
-	// "book-delete": require("./book-delete"),
-	// "issue-request": require("./issue-request"),
+  "companies-add": require("./companies-add"),
+  "employees-add": require("./employees-add"),
+  "employees-delete": require("./employees-delete"),
+  "companies-delete": require("./companies-delete"),
 };

@@ -7,9 +7,9 @@ const mongoose = require("mongoose");
 //     "mongodb+srv://stack_finance:qwerty321@cluster0-wo6jn.mongodb.net/stack_finance?retryWrites=true&w=majority"
 //   );
 // } else {
-  // "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
-  console.log("*** local mongo connected ***");
-  mongoose.connect("mongodb://127.0.0.1/test");
+// "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+console.log("*** local mongo connected ***");
+mongoose.connect("mongodb://127.0.0.1/emp");
 // }
 
 class DBManager {
@@ -17,7 +17,7 @@ class DBManager {
     this.fr = framework;
     this.config = config;
   }
-  
+
   initialize() {
     let path = this.config.dir.app + this.config.dir.models;
     let entities = require(path);
