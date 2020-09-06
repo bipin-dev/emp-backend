@@ -3,8 +3,8 @@ module.exports = {
   environment: "prod",
   app_name: "Employee Management",
   version: "1.0.0",
-  // app_url: "http://ec2-18-217-247-175.us-east-2.compute.amazonaws.com/api",
-  app_url: "http://localhost:4000",
+  app_url: "http://ec2-3-21-56-236.us-east-2.compute.amazonaws.com/api",
+  // app_url: "http://localhost:4000",
   dir: {
     models: "/src/models",
     workflows: "/src/workflows",
