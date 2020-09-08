@@ -1,5 +1,5 @@
 # Employee-backend
-back-end for library system 
+back-end for Employee system 
 
 ## start server
 npm start
