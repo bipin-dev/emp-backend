@@ -1,4 +1,4 @@
-# library-backend
+# Employee-backend
 back-end for library system 
 
 ## start server
@@ -9,5 +9,6 @@ npm start
  - services
  - services_helper
 ## config
-- src
-- config
+- src/models
+- src/actions
+- src/workflow
